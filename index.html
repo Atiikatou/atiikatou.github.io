@@ -18,13 +18,23 @@
     }
 
     .profile-photo {
-  display: block;          /* nécessaire pour centrer */
-  margin: 0 auto 20px auto; /* centrée + espace en bas */
-  width: 140px;            /* taille de la photo */
-  height: 140px;
-  border-radius: 50%;      /* rend la photo ronde */
-  object-fit: cover;       /* évite la déformation */
-  border: 3px solid #4FA3FF; /* optionnel : liseré bleu */
+      display: block;          /* nécessaire pour centrer */
+      margin: 0 auto 20px auto; /* centrée + espace en bas */
+      width: 140px;            /* taille de la photo */
+      height: 140px;
+      border-radius: 50%;      /* rend la photo ronde */
+      object-fit: cover;       /* évite la déformation */
+      border: 3px solid #4FA3FF; /* optionnel : liseré bleu */
+    }
+
+    .org-logo {
+      width: 90px;              /* taille du logo */
+      height: 90px;
+      border-radius: 50%;       /* rend le logo rond */
+      object-fit: cover;        /* coupe proprement si non carré */
+      margin-bottom: 15px;
+      background-color: #ffffff; /* fond blanc si logo transparent */
+      padding: 8px;             /* respiration autour du logo */
     }
     
     p.subtitle {
@@ -116,7 +126,7 @@
 
   <!-- Projet MHF -->
   <div class="project-card">
-    <img src="logo_mhf.png" alt="Logo Muslim Hands France">
+    <img src="logo_mhf.png" alt="Logo Muslim Hands France" class="org-logo">
     <h3>Suivi automatisé des dons - Tableau de bord Power BI</h3>
     <h4>Association Muslim Hands France | du 16 mai au 30 juin 2025</h4>
     <p>Bénévole <strong>Data Analyst</strong> pour Muslim Hands France : traitement des données de dons depuis 2020 et création d’un <strong>tableau de bord Power BI automatisé</strong>, mettant en avant les indicateurs clés pour faciliter la prise de décision.</p>
@@ -129,7 +139,7 @@
 
   <!-- Projet exemple 2 -->
   <div class="project-card">
-    <img src="logo_creai.png" alt="Logo CREAI PACA-Corse">
+    <img src="logo_creai.png" alt="Logo CREAI PACA-Corse" class="org-logo">
     <h3>Analyse médico-sociale - Diagnostic territorial</h3>
     <h4>CREAI PACA | Dates approximatives</h4>
     <p>Stage de fin d’études : traitement et analyse des données médico-sociales pour produire des indicateurs territoriaux et des tableaux synthétiques.</p>
