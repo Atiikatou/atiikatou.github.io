@@ -17,6 +17,16 @@
       color: #E0E0E0;
     }
 
+    .profile-photo {
+  display: block;          /* nécessaire pour centrer */
+  margin: 0 auto 20px auto; /* centrée + espace en bas */
+  width: 140px;            /* taille de la photo */
+  height: 140px;
+  border-radius: 50%;      /* rend la photo ronde */
+  object-fit: cover;       /* évite la déformation */
+  border: 3px solid #4FA3FF; /* optionnel : liseré bleu */
+    }
+    
     p.subtitle {
       text-align: center;
       color: #B0C4DE;
@@ -98,7 +108,7 @@
 </head>
 <body>
 
-<img src="photo_atika.png" alt="Photo Atika">
+<img src="photo_atika.png" alt="Photo Atika" class="profile-photo">
 <h1>Atika Labbass - Data Analyst</h1>
 <p class="subtitle">MES PROJETS DATA</p>
 
